@@ -40,16 +40,19 @@ function App(props) {
 
     .react-datepicker__input-container input{
 
-        padding: .5rem 0 .5rem 0 ;
-        text-align: center;
-        margin: 0 0 1rem 0;
-        color:#d9d9d9;
-        background:#0d0d0d;
-        border:2px solid black;
-        border-radius: 1rem;
-        font-size: 1rem;
-        font-weight: 700;
+      padding: .5rem 0 .5rem 0 ;
+      text-align: center;
+      margin: 1rem 0 1rem 0;
+      color:#d9d9d9;
+      background:#0d0d0d;
+      border:2px solid black;
+      border-radius: 1rem;
+      font-size: 1rem;
+      font-weight:600;
+      &:hover {
+            cursor: pointer;
         }
+        
     }
     `
   
@@ -78,7 +81,7 @@ function App(props) {
       <DatePicker className = "newClass" type = "text" selected={date} onChange={date => setDate(date)} />
       {url.includes('youtube')?<ReactPlayer url={contents.url} />:<Pic pic={contents.url}/>}
       <Content hdpic ={contents.hdurl} explanation={contents.explanation}/>
-      <Footer copyright={contents.copyright}/>
+      {contents.copyright === undefined?"null":<Footer copyright={contents.copyright}/>}
       </Container>
   );
 }

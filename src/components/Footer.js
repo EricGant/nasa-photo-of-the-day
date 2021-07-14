@@ -6,7 +6,7 @@ function Footer(props){
 
     const Footers = styled.div`
     color:lightgray;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0rem 1rem 1rem 1rem;
    `
 
     return (

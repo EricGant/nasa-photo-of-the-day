@@ -15,7 +15,7 @@ const {explanation, hdpic} = props;
         justify-content: center;
         align-items: center;
         padding: .5rem;
-        margin: 0 0 1rem 0;
+        margin: 1rem 0 1rem 0;
         color:#d9d9d9;
         background:#0d0d0d;
         border:2px solid black;
@@ -27,11 +27,14 @@ const {explanation, hdpic} = props;
     }  
     p {
         font-weight: 300;
-        width: 70%;
+        margin-bottom: 1rem;
+        width: 75%;
+        padding:1%;
         line-height: 1.5;
         color:#d9d9d9;
         background: #0d0d0d;
         border: 2px solid black;
+        border-radius:1rem;
         text-align:center;
         font-size: 1.3rem;
     }
