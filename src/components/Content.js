@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 function Content(props) {
-const {explanation, hdpic} = props;
+const {explanation, hdpic, url} = props;
 
     const Contents = styled.div`
         display:flex;
@@ -41,7 +41,7 @@ const {explanation, hdpic} = props;
       `
       return (
           <Contents>
-              <a href={hdpic} style={{textDecoration: "none"}}><button className="hdPicRedirect">Click to view HD Photo</button></a>
+              {url.includes('youtube')?null:<a href={hdpic} style={{textDecoration: "none"}}><button className="hdPicRedirect">Click to view HD Photo</button></a>}
               <p>{explanation}</p>
           </Contents>)
 }

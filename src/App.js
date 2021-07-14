@@ -80,8 +80,8 @@ function App(props) {
       <Header title={contents.title} date={contents.date}/>
       <DatePicker className = "newClass" type = "text" selected={date} onChange={date => setDate(date)} />
       {url.includes('youtube')?<ReactPlayer url={contents.url} />:<Pic pic={contents.url}/>}
-      <Content hdpic ={contents.hdurl} explanation={contents.explanation}/>
-      {contents.copyright === undefined?"null":<Footer copyright={contents.copyright}/>}
+      <Content hdpic ={contents.hdurl} explanation={contents.explanation} url={url}/>
+      {contents.copyright === undefined?null:<Footer copyright={contents.copyright}/>}
       </Container>
   );
 }
