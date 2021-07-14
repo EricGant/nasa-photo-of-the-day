@@ -10,7 +10,6 @@ import { apiKey } from "./API";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import dateFormat from "dateformat";
-import Video from "./components/Video"
 import ReactPlayer from "react-player";
 
 
