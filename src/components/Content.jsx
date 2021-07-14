@@ -2,40 +2,43 @@ import React from 'react'
 import styled from 'styled-components'
 
 function Content(props) {
-const {explanation} = props;
+const {explanation, hdpic} = props;
 
-const Contents = styled.div`
-    display:flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content:space-between;
-    
+    const Contents = styled.div`
+        display:flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content:space-between;
+
+    .hdPicRedirect {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+        margin: 0 0 1rem 0;
+        color:#d9d9d9;
+        background:#0d0d0d;
+        border:2px solid black;
+        border-radius: 1rem;
+        font-size:1rem;
+            &:hover {
+            cursor: pointer;
+        }
+    }  
     p {
-      width: 60%;
-      line-height: 1.5;
-      font-weight: 400;
-      background: lightgray;
-      color:black;
-
-      border: 2px solid black;
-      text-align:center;
-      font-size: 1.3rem;
-    }
-    .btn {
-      padding: 7px;
-      margin: 10px;
-      color:black;
-      background:gold;
-      border:none;
-      border-radius: 15px;
-      font-size:1rem;
-      &:hover {
-        cursor: pointer;
-      }
+        font-weight: 300;
+        width: 70%;
+        line-height: 1.5;
+        color:#d9d9d9;
+        background: #0d0d0d;
+        border: 2px solid black;
+        text-align:center;
+        font-size: 1.3rem;
     }
       `
       return (
           <Contents>
+              <a href={hdpic} style={{textDecoration: "none"}}><button className="hdPicRedirect">Click to view HD Photo</button></a>
               <p>{explanation}</p>
           </Contents>)
 }

@@ -1,6 +1,4 @@
-import { findByLabelText } from '@testing-library/dom'
 import React from 'react'
-import { flushSync } from 'react-dom'
 import styled from 'styled-components'
 
 
@@ -9,20 +7,22 @@ function Header(props){
     const {title, date} = props
 
     const Headers = styled.div`
+    margin-top: 2px;
     display:flex;
     flex-flow: column nowrap;
-    margin-top: 10px;
     align-items: center;    
+    h1, h2, h3 {
+        color:lightgray
+    }
     
-    h3 {
-        padding:10px;
+    h1, h3 {
+        font-size:2rem;
+        margin-top: 1rem;
     }
     h2 {
-        color:lightblue;
-        margin-top:15px;
-        font-weight:600;
-        padding: 10px
+        font-weight:300;
     }
+
     `
     return (
     <Headers>

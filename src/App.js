@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from 'axios'
-import Gallery from './components/Gallery'
+import Pic from './components/Pic'
 import Content from "./components/Content";
 import Header from "./components/Header";
 import Footer from './components/Footer'
@@ -27,6 +27,18 @@ function App(props) {
     justify-content:space-between;
     min-height: 100vh;
     box-sizing:border-box;
+
+  p {
+    font-weight: 300;
+    width: 70%;
+    line-height: 1.5;
+    color:#d9d9d9;
+    background: #0d0d0d;
+
+    border: 2px solid black;
+    text-align:center;
+    font-size: 1.3rem;
+    }
     `
   
 
@@ -51,8 +63,8 @@ function App(props) {
   return (
     <Container className="container">
       <Header title={contents.title} date={contents.date}/>
-      <Gallery pic={contents.url}/>
-      <Content explanation={contents.explanation}/>
+      <Pic pic={contents.url}/>
+      <Content hdpic ={contents.hdurl} explanation={contents.explanation}/>
       <Footer copyright={contents.copyright}/>
       </Container>
   );
