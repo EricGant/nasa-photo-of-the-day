@@ -4,7 +4,7 @@ import styled from 'styled-components';
 function Pic(props) {
   const { pic } = props;
 
-
+console.log(pic)
   const Image = styled.img `
   border: 1px solid black;
   margin: 1rem 0 1rem 0 ;
