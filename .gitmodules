@@ -1,0 +1,3 @@
+[submodule "EricGant/nasa-photo-of-the-day"] 
+  path = src/components
+  url = https://github.com/EricGant/nasa-photo-of-the-day
