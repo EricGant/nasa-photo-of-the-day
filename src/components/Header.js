@@ -26,7 +26,7 @@ function Header(props){
     `
     return (
     <Headers>
-        <h1>Nasa's Astronomy Photo of the Day</h1>
+        <h1>Nasa's Astronomy Picture of the Day</h1>
         <h2>Date: {date}</h2>
         <h3>{title}</h3>
     </Headers>
