@@ -7,7 +7,7 @@ function Pic(props) {
   const Image = styled.img `
   border: 1px solid black;
   margin: 1rem 0 1rem 0 ;
-  height: 80vh; `
+  height: 60vh; `
 
   return (
     <div>

@@ -31,7 +31,7 @@ function App(props) {
     flex-flow: column nowrap;
     align-items:center;
     justify-content:space-between;
-    min-height: 100vh;
+    min-height: 60vh;
     box-sizing:border-box;
 
     .react-datepicker__input-container input{
