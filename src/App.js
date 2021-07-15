@@ -46,6 +46,8 @@ function App(props) {
       font-weight:600;
       &:hover {
         cursor: pointer;
+        background:#404040;
+        transition: 1s;
       }
     }`
   

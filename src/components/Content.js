@@ -15,7 +15,7 @@ const {explanation, hdpic, url} = props;
         justify-content: center;
         align-items: center;
         padding: .5rem;
-        margin: 1rem 0 1rem 0;
+        margin: 0 0 1rem 0;
         color:#d9d9d9;
         background:#0d0d0d;
         border:2px solid black;
@@ -23,6 +23,8 @@ const {explanation, hdpic, url} = props;
         font-size:1rem;
             &:hover {
             cursor: pointer;
+            transition: 1s;
+            background-color: #404040;
         }
     }
       

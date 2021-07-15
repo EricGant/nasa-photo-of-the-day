@@ -5,21 +5,25 @@ function Header(props){
     const {title} = props
 
     const Headers = styled.div`
-    margin-top: 2px;
     display:flex;
     flex-flow: column nowrap;
     align-items: center;    
     h1, h2, h3 {
-        color:lightgray
+        color:#d9d9d9
     }
     
-    h1, h3 {
+    h1 {
         font-size:2rem;
         margin-top: 1rem;
     }
     h2 {
         font-weight:450;
-    }`
+    }
+    h3{
+        margin-top: .3rem;
+        font-size:1.5rem;
+    }
+    `
 
     return (
     <Headers>
