@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Header(props){
+export default function Header(props){
     const {title} = props
 
     const Headers = styled.div`
@@ -32,4 +32,3 @@ function Header(props){
     </Headers>
     )
 }
-export default Header

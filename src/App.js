@@ -12,7 +12,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import dateFormat from "dateformat";
 import ReactPlayer from "react-player";
 
-function App(props) {
+export default function App(props) {
     const [contents, setContents] = useState([])
     const [date, setDate] = useState(new Date());
     const [url, setUrl] = useState("")
@@ -66,11 +66,9 @@ function App(props) {
     <Container className="container">
       <Header title={contents.title}/>
       <DatePicker dateFormat = "MMMM d, yyyy" className = "newClass" selected={date} placeholderText="Click to select a date" withPortal showMonthDropdown showYearDropdown dropdownMode= "select" onChange={(date) => setDate(date)} />
-      {url.includes('youtube')?<div className ='player-wrapper'><ReactPlayer url={contents.url} /></div>:<Pic pic={contents.url}/>}
+      {url.includes('youtube')?<div className ='player-wrapper'><ReactPlayer url={url} /></div>:<Pic pic={url}/>}
       <Content hdpic ={contents.hdurl} explanation={contents.explanation} url={url}/>
       {contents.copyright === undefined?null:<Footer copyright={contents.copyright}/>}
       </Container>
   );
 }
-
-export default App;

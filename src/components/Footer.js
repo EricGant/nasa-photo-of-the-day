@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-function Footer(props){
+export default function Footer(props){
     const {copyright} = props
 
     const Footers = styled.div`
@@ -14,5 +14,3 @@ function Footer(props){
         </Footers>
     )
 }
-
-export default Footer

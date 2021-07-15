@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Pic(props) {
+export default function Pic(props) {
   const { pic } = props;
 
   const Image = styled.img `
@@ -15,5 +15,3 @@ function Pic(props) {
     </div>
   )
 }
-
-export default Pic

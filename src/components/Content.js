@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Content(props) {
+export default function Content(props) {
 const {explanation, hdpic, url} = props;
 
     const Contents = styled.div`
@@ -48,4 +48,3 @@ const {explanation, hdpic, url} = props;
               <p>{explanation}</p>
           </Contents>)
 }
-export default Content
