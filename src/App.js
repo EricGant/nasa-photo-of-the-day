@@ -12,21 +12,17 @@ import "react-datepicker/dist/react-datepicker.css";
 import dateFormat from "dateformat";
 import ReactPlayer from "react-player";
 
-
-
-
 function App(props) {
-  const [contents, setContents] = useState([])
-  const [date, setDate] = useState(new Date());
-  const [url, setUrl] = useState("")
+    const [contents, setContents] = useState([])
+    const [date, setDate] = useState(new Date());
+    const [url, setUrl] = useState("")
+    let formatDate = dateFormat(date,'yyyy-mm-dd')
 
-
-
-  const Container = styled.div`
-  *{
+    const Container = styled.div`
+    *{
     padding:0px;
     margin:0px;
-  }
+    }
     background: url("https://cdn.wallpapersafari.com/56/11/OIf0lp.jpg");
     background-position:center;
     background-repeat: no-repeat;
@@ -39,7 +35,6 @@ function App(props) {
     box-sizing:border-box;
 
     .react-datepicker__input-container input{
-
       padding: .5rem 0 .5rem 0 ;
       text-align: center;
       margin: 1rem 0 0 0;
@@ -50,15 +45,9 @@ function App(props) {
       font-size: 1rem;
       font-weight:600;
       &:hover {
-            cursor: pointer;
-        }
-        
-    }
-    `
-  
-  let formatDate = dateFormat(date,'yyyy-mm-dd')
-  let newFormatDate = dateFormat(date, 'mmmm d, yyyy')
-  
+        cursor: pointer;
+      }
+    }`
   
   useEffect(() => {
     axios.get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${formatDate}`)
@@ -70,10 +59,6 @@ function App(props) {
     .catch(err =>
       console.log(err)
     )}, [formatDate])
-
-      
-
-
 
   return (
     <Container className="container">

@@ -5,10 +5,10 @@ function Content(props) {
 const {explanation, hdpic, url} = props;
 
     const Contents = styled.div`
-        display:flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content:space-between;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content:space-between;
 
     .hdPicRedirect {
         display:flex;
@@ -37,8 +37,8 @@ const {explanation, hdpic, url} = props;
         border-radius:1rem;
         text-align:center;
         font-size: 1.3rem;
-    }
-      `
+    }`
+
       return (
           <Contents>
               {url.includes('youtube')?null:<a href={hdpic} style={{textDecoration: "none"}}><button className="hdPicRedirect">Click to view HD Photo</button></a>}

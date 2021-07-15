@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
-    
 function Header(props){
     const {title} = props
 
@@ -21,9 +19,8 @@ function Header(props){
     }
     h2 {
         font-weight:450;
-    }
+    }`
 
-    `
     return (
     <Headers>
         <h1>Nasa's Astronomy Picture of the Day</h1>
