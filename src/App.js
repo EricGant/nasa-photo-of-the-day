@@ -42,7 +42,7 @@ function App(props) {
 
       padding: .5rem 0 .5rem 0 ;
       text-align: center;
-      margin: 1rem 0 1rem 0;
+      margin: 1rem 0 0 0;
       color:#d9d9d9;
       background:#0d0d0d;
       border:2px solid black;
@@ -57,7 +57,7 @@ function App(props) {
     `
   
   let formatDate = dateFormat(date,'yyyy-mm-dd')
-
+  let newFormatDate = dateFormat(date, 'mmmm d, yyyy')
   
   
   useEffect(() => {
@@ -71,14 +71,14 @@ function App(props) {
       console.log(err)
     )}, [formatDate])
 
- 
+      
 
 
 
   return (
     <Container className="container">
-      <Header title={contents.title} date={contents.date}/>
-      <DatePicker className = "newClass" type = "text" selected={date} onChange={date => setDate(date)} />
+      <Header title={contents.title}/>
+      <DatePicker dateFormat = "MMMM dd, yyyy" className = "newClass" type = "text" selected={date} onChange={date => setDate(date)} />
       {url.includes('youtube')?<ReactPlayer url={contents.url} />:<Pic pic={contents.url}/>}
       <Content hdpic ={contents.hdurl} explanation={contents.explanation} url={url}/>
       {contents.copyright === undefined?null:<Footer copyright={contents.copyright}/>}

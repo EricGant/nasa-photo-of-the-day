@@ -9,6 +9,7 @@
     "axios": "^0.21.1",
     "dateformat": "^4.5.1",
     "install": "^0.13.0",
+    "jquery": "^3.6.0",
     "npm": "^7.19.1",
     "react": "^16.14.0",
     "react-datepicker": "^4.1.1",

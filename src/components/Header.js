@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 
 
@@ -20,14 +20,14 @@ function Header(props){
         margin-top: 1rem;
     }
     h2 {
-        font-weight:300;
+        font-weight:450;
     }
 
     `
     return (
     <Headers>
         <h1>Nasa's Astronomy Picture of the Day</h1>
-        <h2>Date: {date}</h2>
+        <h2>{date}</h2>
         <h3>{title}</h3>
     </Headers>
     )
