@@ -63,8 +63,8 @@ function App(props) {
   return (
     <Container className="container">
       <Header title={contents.title}/>
-      <DatePicker dateFormat = "MMMM dd, yyyy" className = "newClass" type = "text" selected={date} onChange={date => setDate(date)} />
-      {url.includes('youtube')?<ReactPlayer url={contents.url} />:<Pic pic={contents.url}/>}
+      <DatePicker dateFormat = "MMMM dd, yyyy" className = "newClass" selected={date} placeholderText="Click to select a date" withPortal showMonthDropdown showYearDropdown dropdownMode= "select" onChange={(date) => setDate(date)} />
+      {url.includes('youtube')?<div className ='player-wrapper'><ReactPlayer url={contents.url} /></div>:<Pic pic={contents.url}/>}
       <Content hdpic ={contents.hdurl} explanation={contents.explanation} url={url}/>
       {contents.copyright === undefined?null:<Footer copyright={contents.copyright}/>}
       </Container>
