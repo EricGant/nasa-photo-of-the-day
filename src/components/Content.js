@@ -24,7 +24,8 @@ const {explanation, hdpic, url} = props;
             &:hover {
             cursor: pointer;
         }
-    }  
+    }
+      
     p {
         font-weight: 300;
         margin-bottom: 1rem;
