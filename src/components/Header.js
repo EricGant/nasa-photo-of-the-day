@@ -1,10 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 
     
 function Header(props){
-    const {title, date} = props
+    const {title} = props
 
     const Headers = styled.div`
     margin-top: 2px;
@@ -27,7 +27,6 @@ function Header(props){
     return (
     <Headers>
         <h1>Nasa's Astronomy Picture of the Day</h1>
-        <h2>{date}</h2>
         <h3>{title}</h3>
     </Headers>
     )
