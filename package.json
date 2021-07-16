@@ -38,7 +38,7 @@
       "not dead",
       "not op_mini all"
     ],
-    "homepage": "https://github.com/EricGant/nasa-photo-of-the-day/tree/eric-gant",
+    "homepage": "https://github.com/EricGant/nasa-photo-of-the-day/",
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
