@@ -10,7 +10,7 @@ export default function Footer(props){
 
     return (
         <Footers>
-            <h4>Photo from {copyright}</h4>
+            <h4>Photo by {copyright}</h4>
         </Footers>
     )
 }

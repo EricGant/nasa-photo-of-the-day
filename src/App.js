@@ -12,7 +12,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import dateFormat from "dateformat";
 import ReactPlayer from "react-player";
 
-export default function App(props) {
+function App(props) {
     const [contents, setContents] = useState([])
     const [date, setDate] = useState(new Date());
     const [url, setUrl] = useState("")
@@ -72,3 +72,5 @@ export default function App(props) {
       </Container>
   );
 }
+
+export default App;
