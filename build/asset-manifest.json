@@ -5,19 +5,19 @@
     "main.js.map": "/EricGant/nasa-photo-of-the-day/static/js/main.1304928f.chunk.js.map",
     "runtime-main.js": "/EricGant/nasa-photo-of-the-day/static/js/runtime-main.095f5768.js",
     "runtime-main.js.map": "/EricGant/nasa-photo-of-the-day/static/js/runtime-main.095f5768.js.map",
-    "static/css/2.adcc7399.chunk.css": "/EricGant/nasa-photo-of-the-day/static/css/2.adcc7399.chunk.css",
+    "static/css/2.0322c69f.chunk.css": "/EricGant/nasa-photo-of-the-day/static/css/2.0322c69f.chunk.css",
     "static/js/2.b391c0cc.chunk.js": "/EricGant/nasa-photo-of-the-day/static/js/2.b391c0cc.chunk.js",
     "static/js/2.b391c0cc.chunk.js.map": "/EricGant/nasa-photo-of-the-day/static/js/2.b391c0cc.chunk.js.map",
     "index.html": "/EricGant/nasa-photo-of-the-day/index.html",
-    "precache-manifest.620972289aa20353e1afeae9237cfb64.js": "/EricGant/nasa-photo-of-the-day/precache-manifest.620972289aa20353e1afeae9237cfb64.js",
+    "precache-manifest.8108c10eb88d72142dcc021a6c610577.js": "/EricGant/nasa-photo-of-the-day/precache-manifest.8108c10eb88d72142dcc021a6c610577.js",
     "service-worker.js": "/EricGant/nasa-photo-of-the-day/service-worker.js",
-    "static/css/2.adcc7399.chunk.css.map": "/EricGant/nasa-photo-of-the-day/static/css/2.adcc7399.chunk.css.map",
+    "static/css/2.0322c69f.chunk.css.map": "/EricGant/nasa-photo-of-the-day/static/css/2.0322c69f.chunk.css.map",
     "static/css/main.c898e1a1.chunk.css.map": "/EricGant/nasa-photo-of-the-day/static/css/main.c898e1a1.chunk.css.map",
     "static/js/2.b391c0cc.chunk.js.LICENSE.txt": "/EricGant/nasa-photo-of-the-day/static/js/2.b391c0cc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.095f5768.js",
-    "static/css/2.adcc7399.chunk.css",
+    "static/css/2.0322c69f.chunk.css",
     "static/js/2.b391c0cc.chunk.js",
     "static/css/main.c898e1a1.chunk.css",
     "static/js/main.1304928f.chunk.js"
