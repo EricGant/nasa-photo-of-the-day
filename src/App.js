@@ -48,6 +48,7 @@ function App(props) {
         cursor: pointer;
         background:#333333;
         transition: 1s;
+        transform: scale(1.2);
       }
     }`
   

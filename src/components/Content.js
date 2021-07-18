@@ -25,6 +25,7 @@ const {explanation, hdpic, url} = props;
             cursor: pointer;
             transition: 1s;
             background-color: #404040;
+            transform:scale(1.2);
         }
     }
       
