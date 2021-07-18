@@ -45,7 +45,7 @@ const {explanation, hdpic, url} = props;
 
       return (
           <Contents>
-              {url.includes('youtube')?null:<a href={hdpic} style={{textDecoration: "none"}}><button className="hdPicRedirect">Click to view HD Photo</button></a>}
+              {url.includes('youtube')?null:<a href={hdpic} target="_blank" style={{textDecoration: "none"}}><button className="hdPicRedirect">Click to view HD Photo</button></a>}
               <p>{explanation}</p>
           </Contents>)
 }
